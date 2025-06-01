@@ -32,7 +32,11 @@ export default function LibraryLayout({
               variant="outline"
               size="sm"
               asChild
-              className="bg-background/80 backdrop-blur-sm border-border hover:bg-accent"
+              className="bg-black dark:bg-white text-white dark:text-black backdrop-blur-sm border-border hover:bg-accent shadow-md hover:shadow-lg transition-all duration-300 h-10 px-4 flex items-center justify-center gap-2
+              rounded-lg text-sm font-medium
+              hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background focus:ring-primary"
+              style={{ boxShadow: "0 4px 6px rgba(255, 255, 255, 0.2)" }}
+
             >
               <a
                 href="https://arcomponents-arlink_arlink.arweave.net/"
@@ -40,7 +44,7 @@ export default function LibraryLayout({
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
               >
-                <ExternalLink className="h-3 w-3" />
+                <ExternalLink className="h-3 w-3 " />
                 Browse Arweave Web Builder
               </a>
             </Button>
