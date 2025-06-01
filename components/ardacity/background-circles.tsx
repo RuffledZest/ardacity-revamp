@@ -112,13 +112,18 @@ export function BackgroundCircles({
         >
           {title}
         </h1>
-
+<img
+            src="https://ardacityui.ar.io/ArDacity-design3.png"
+            alt="Ardacity Logo"
+            className="inline-block  mr-2"
+          />
         <motion.p
           className="mt-6 text-lg md:text-xl text-black dark:text-white"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
+          
           {description}
           <span className="mx-3 opacity-50">·</span>
           Ardacity UI

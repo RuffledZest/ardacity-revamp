@@ -4,23 +4,27 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Copy, Eye, Code, Globe, Video, CheckCircle, TrendingUp } from "lucide-react"
+import { Copy, Eye, Code } from "lucide-react"
 import { useState } from "react"
-import BentoGrid from "@/components/ardacity/bento-grid"
+import VercelV0Chat from "@/components/ardacity/vercel-v0-chat"
+
+
+
+
 
 const installCommands = {
-  bun: "bunx shadcn@latest add https://ardacity.dev/r/bento-grid.json",
-  npm: "npx shadcn@latest add https://ardacity.dev/r/bento-grid.json",
-  pnpm: "pnpm dlx shadcn@latest add https://ardacity.dev/r/bento-grid.json",
+  bun: "bunx shadcn@latest add https://ardacityui.ar.io/r/vercel-v0-chat.json",
+  npm: "npx shadcn@latest add https://ardacityui.ar.io/r/vercel-v0-chat.json",
+  pnpm: "pnpm dlx shadcn@latest add https://ardacityui.ar.io/r/vercel-v0-chat.json",
 }
 
-const codeExample = `import BentoGrid from "@/components/ardacity/bento-grid";
+const codeExample = `import BentoGrid from "@/components/ardacity/vercel-v0-chat";
 
 export default function Page() {
   return <BentoGrid />;
 }`
 
-export default function BentoGridPage() {
+export default function VercelV0ChatPage() {
   const [activeTab, setActiveTab] = useState("preview")
   const [copiedCommand, setCopiedCommand] = useState<string | null>(null)
 
@@ -34,7 +38,7 @@ export default function BentoGridPage() {
     <div className="container mx-auto px-6 py-8 max-w-6xl">
       <div className="mb-8">
         <div className="flex items-center gap-2 mb-4">
-          <h1 className="text-4xl font-bold">Bento Grid</h1>
+          <h1 className="text-4xl font-bold">Vercel V0 Chat</h1>
           <Badge variant="secondary">Layout</Badge>
         </div>
         <p className="text-lg text-muted-foreground">
@@ -48,7 +52,7 @@ export default function BentoGridPage() {
           <div className="flex items-center justify-between">
             <div>
               <CardTitle>Component Preview</CardTitle>
-              <CardDescription>Interactive preview of the Bento Grid component</CardDescription>
+              <CardDescription>Interactive preview of the Vercel V0 Chat component</CardDescription>
             </div>
             <Tabs value={activeTab} onValueChange={setActiveTab}>
               <TabsList>
@@ -66,44 +70,9 @@ export default function BentoGridPage() {
         </CardHeader>
         <CardContent>
           <Tabs value={activeTab} onValueChange={setActiveTab}>
-            <TabsContent value="preview" className="mt-0">
-              <div className="min-h-[400px] bg-muted/20 rounded-lg p-4">
-                <BentoGrid items={[
-                  {
-    title: "Analytics Dashboard",
-    meta: "v2.4.1",
-    description: "Real-time metrics with AI-powered insights and predictive analytics",
-    icon: <TrendingUp className="w-4 h-4 text-black dark:text-white" />,
-    status: "Live",
-    tags: ["Statistics", "Reports", "AI"],
-    colSpan: 2,
-    hasPersistentHover: true,
-  },
-  {
-    title: "Task Manager",
-    meta: "84 completed",
-    description: "Automated workflow management with priority scheduling",
-    icon: <CheckCircle className="w-4 h-4 text-black dark:text-white" />,
-    status: "Updated",
-    tags: ["Productivity", "Automation"],
-  },
-  {
-    title: "Media Library",
-    meta: "12GB used",
-    description: "Cloud storage with intelligent content processing",
-    icon: <Video className="w-4 h-4 text-black dark:text-white" />,
-    tags: ["Storage", "CDN"],
-    colSpan: 2,
-  },
-  {
-    title: "Global Network",
-    meta: "6 regions",
-    description: "Multi-region deployment with edge computing",
-    icon: <Globe className="w-4 h-4 text-black dark:text-white" />,
-    status: "Beta",
-    tags: ["Infrastructure", "Edge"],
-  },
-                ]} />
+            <TabsContent value="preview" className="mt-0 flex justify-center">
+              <div className=" bg-muted/20 rounded-lg p-4">
+                <VercelV0Chat />
               </div>
             </TabsContent>
             <TabsContent value="code" className="mt-0">
@@ -132,7 +101,7 @@ export default function BentoGridPage() {
       <Card className="mb-8">
         <CardHeader>
           <CardTitle>Installation</CardTitle>
-          <CardDescription>Install the Bento Grid component using the shadcn/ui CLI</CardDescription>
+          <CardDescription>Install the Vercel V0 Chat component using the shadcn/ui CLI</CardDescription>
         </CardHeader>
         <CardContent>
           <Tabs defaultValue="bun" className="w-full">

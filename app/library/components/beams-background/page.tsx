@@ -9,18 +9,18 @@ import { useState } from "react"
 import BeamsBackground from "@/components/ardacity/beams-background"
 
 const installCommands = {
-  bun: "bunx shadcn@latest add https://ardacity.dev/r/bento-grid.json",
-  npm: "npx shadcn@latest add https://ardacity.dev/r/bento-grid.json",
-  pnpm: "pnpm dlx shadcn@latest add https://ardacity.dev/r/bento-grid.json",
+  bun: "bunx shadcn@latest add https://ardacityui.ar.io/r/beams-background.json",
+  npm: "npx shadcn@latest add https://ardacityui.ar.io/r/beams-background.json",
+  pnpm: "pnpm dlx shadcn@latest add https://ardacityui.ar.io/r/beams-background.json",
 }
 
-const codeExample = `import BentoGrid from "@/components/ardacity/bento-grid";
+const codeExample = `import BeamsBackground from "@/components/ardacity/beams-background";
 
 export default function Page() {
-  return <BentoGrid />;
+  return <BeamsBackground />;
 }`
 
-export default function BentoGridPage() {
+export default function BeamsBackgroundPage() {
   const [activeTab, setActiveTab] = useState("preview")
   const [copiedCommand, setCopiedCommand] = useState<string | null>(null)
 
@@ -34,7 +34,7 @@ export default function BentoGridPage() {
     <div className="container mx-auto px-6 py-8 max-w-6xl">
       <div className="mb-8">
         <div className="flex items-center gap-2 mb-4">
-          <h1 className="text-4xl font-bold">Bento Grid</h1>
+          <h1 className="text-4xl font-bold">Beams Background</h1>
           <Badge variant="secondary">Layout</Badge>
         </div>
         <p className="text-lg text-muted-foreground">
@@ -48,7 +48,7 @@ export default function BentoGridPage() {
           <div className="flex items-center justify-between">
             <div>
               <CardTitle>Component Preview</CardTitle>
-              <CardDescription>Interactive preview of the Bento Grid component</CardDescription>
+              <CardDescription>Interactive preview of the Beams Background component</CardDescription>
             </div>
             <Tabs value={activeTab} onValueChange={setActiveTab}>
               <TabsList>
@@ -97,7 +97,7 @@ export default function BentoGridPage() {
       <Card className="mb-8">
         <CardHeader>
           <CardTitle>Installation</CardTitle>
-          <CardDescription>Install the Bento Grid component using the shadcn/ui CLI</CardDescription>
+          <CardDescription>Install the Beams Background component using the shadcn/ui CLI</CardDescription>
         </CardHeader>
         <CardContent>
           <Tabs defaultValue="bun" className="w-full">

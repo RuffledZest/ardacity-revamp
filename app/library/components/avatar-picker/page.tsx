@@ -9,9 +9,9 @@ import { useState } from "react"
 import AvatarPicker from "@/components/ardacity/avatar-picker"
 
 const installCommands = {
-  bun: "bunx shadcn@latest add https://ardacity.dev/r/avatar-picker.json",
-  npm: "npx shadcn@latest add https://ardacity.dev/r/avatar-picker.json",
-  pnpm: "pnpm dlx shadcn@latest add https://ardacity.dev/r/avatar-picker.json",
+  bun: "bunx shadcn@latest add https://ardacityui.ar.io/r/avatar-picker.json",
+  npm: "npx shadcn@latest add https://ardacityui.ar.io/r/avatar-picker.json",
+  pnpm: "pnpm dlx shadcn@latest add https://ardacityui.ar.io/r/avatar-picker.json",
 }
 
 const codeExample = `import AvatarPicker from "@/components/ardacity/avatar-picker";

@@ -78,9 +78,9 @@ function ElegantShape({
 }
 
 export default function HeroGeometric({
-    badge = "ardacity UI",
-    title1 = "Elevate Your",
-    title2 = "Digital Vision",
+    badge = "Ardacity UI",
+    title1 = "ArDacity",
+    title2 = "Find Your Design",
 }: {
     badge?: string;
     title1?: string;
@@ -160,10 +160,10 @@ export default function HeroGeometric({
                         className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12"
                     >
                         <Image
-                            src="https://ui.codesnipet.dev/logo.svg"
+                            src="https://ardacityui.ar.io/ArDacity-design3.png"
                             alt="ardacity UI"
-                            width={20}
-                            height={20}
+                            width={54}
+                            height={54}
                         />
                         <span className="text-sm text-white/60 tracking-wide">
                             {badge}
@@ -177,13 +177,13 @@ export default function HeroGeometric({
                         animate="visible"
                     >
                         <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 md:mb-8 tracking-tight">
-                            <span className="bg-clip-text text-transparent bg-linear-to-b from-white to-white/80">
+                            <span className="bg-clip-text  bg-linear-to-b from-white to-white/80">
                                 {title1}
                             </span>
                             <br />
                             <span
                                 className={cn(
-                                    "bg-clip-text text-transparent bg-linear-to-r from-indigo-300 via-white/90 to-rose-300 ",
+                                    "bg-clip-text  bg-linear-to-r from-indigo-300 via-white/90 to-rose-300 ",
                                     pacifico.className
                                 )}
                             >

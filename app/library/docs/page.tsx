@@ -8,9 +8,9 @@ import { Copy, Terminal, Package, Download } from "lucide-react"
 import { useState } from "react"
 
 const installCommands = {
-  bun: "bunx shadcn@latest add https://ardacity.dev/r/utils.json",
-  npm: "npx shadcn@latest add https://ardacity.dev/r/utils.json",
-  pnpm: "pnpm dlx shadcn@latest add https://ardacity.dev/r/utils.json",
+  bun: "bunx shadcn@latest add https://ardacityui.ar.io/r/utils.json",
+  npm: "npx shadcn@latest add https://ardacityui.ar.io/r/utils.json",
+  pnpm: "pnpm dlx shadcn@latest add https://ardacityui.ar.io/r/utils.json",
 }
 
 export default function DocsPage() {
@@ -105,7 +105,7 @@ export default function DocsPage() {
             <div>
               <h4 className="font-medium mb-2">1. Install a component</h4>
               <div className="bg-muted rounded-lg p-4">
-                <code className="text-sm">bunx shadcn@latest add https://ardacity.dev/r/avatar-picker.json</code>
+                <code className="text-sm">bunx shadcn@latest add https://ardacityui.ar.io/r/avatar-picker.json</code>
               </div>
             </div>
             <div>
@@ -143,7 +143,7 @@ export default function Page() {
               </p>
               <div className="bg-muted rounded-lg p-4">
                 <code className="text-sm">
-                  bunx shadcn@latest add https://ardacity.dev/r/avatar-picker.json -c ./apps/www
+                  bunx shadcn@latest add https://ardacityui.ar.io/r/avatar-picker.json -c ./apps/www
                 </code>
               </div>
             </div>

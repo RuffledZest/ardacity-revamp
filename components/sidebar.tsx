@@ -66,10 +66,14 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
       >
         <div className="flex h-14 items-center justify-between px-4 border-b">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">A</span>
+            <div className="  rounded-lg flex items-center justify-center">
+              <img
+                src="https://ardacityui.ar.io/ArDacity-design3.png"
+                alt="Ardacity Logo"
+                className="h-12 w-full"
+              />
             </div>
-            <span className="font-semibold">Ardacity</span>
+           
           </Link>
           <Button variant="ghost" size="icon" className="md:hidden" onClick={onClose}>
             <X className="h-5 w-5" />

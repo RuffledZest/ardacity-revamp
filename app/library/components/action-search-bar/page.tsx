@@ -9,9 +9,9 @@ import { useState } from "react"
 import ActionSearchBar from "@/components/ardacity/action-search-bar"
 
 const installCommands = {
-  bun: "bunx shadcn@latest add https://ardacity.dev/r/action-search-bar.json",
-  npm: "npx shadcn@latest add https://ardacity.dev/r/action-search-bar.json",
-  pnpm: "pnpm dlx shadcn@latest add https://ardacity.dev/r/action-search-bar.json",
+  bun: "bunx shadcn@latest add https://ardacityui.ar.io/r/action-search-bar.json",
+  npm: "npx shadcn@latest add https://ardacityui.ar.io/r/action-search-bar.json",
+  pnpm: "pnpm dlx shadcn@latest add https://ardacityui.ar.io/r/action-search-bar.json",
 }
 
 const codeExample = `import ActionSearchBar from "@/components/ardacity/action-search-bar";

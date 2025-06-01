@@ -17,7 +17,7 @@ export default function AICardGenerationPage() {
     setTimeout(() => setCopied(false), 2000)
   }
 
-  const installCommand = "npx shadcn@latest add https://ardacity.dev/r/ai-card-generation.json"
+  const installCommand = "npx shadcn@latest add https://ardacityui.ar.io/r/ai-card-generation.json"
 
   return (
     <div className="flex">

@@ -9,15 +9,15 @@ import { useState } from "react"
 import BackgroundCircles from "@/components/ardacity/background-circles"
 
 const installCommands = {
-  bun: "bunx shadcn@latest add https://ardacity.dev/r/bento-grid.json",
-  npm: "npx shadcn@latest add https://ardacity.dev/r/bento-grid.json",
-  pnpm: "pnpm dlx shadcn@latest add https://ardacity.dev/r/bento-grid.json",
+  bun: "bunx shadcn@latest add https://ardacityui.ar.io/r/background-circles.json",
+  npm: "npx shadcn@latest add https://ardacityui.ar.io/r/background-circles.json",
+  pnpm: "pnpm dlx shadcn@latest add https://ardacityui.ar.io/r/background-circles.json",
 }
 
-const codeExample = `import BentoGrid from "@/components/ardacity/bento-grid";
+const codeExample = `import BentoGrid from "@/components/ardacity/background-circles";
 
 export default function Page() {
-  return <BentoGrid />;
+  return <BackgroundCircles />;
 }`
 
 export default function BackgroundCirclesPage() {
@@ -34,7 +34,7 @@ export default function BackgroundCirclesPage() {
     <div className="container mx-auto px-6 py-8 max-w-6xl">
       <div className="mb-8">
         <div className="flex items-center gap-2 mb-4">
-          <h1 className="text-4xl font-bold">Bento Grid</h1>
+          <h1 className="text-4xl font-bold">Background Circles</h1>
           <Badge variant="secondary">Layout</Badge>
         </div>
         <p className="text-lg text-muted-foreground">

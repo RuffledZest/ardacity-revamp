@@ -6,21 +6,24 @@ import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Copy, Eye, Code } from "lucide-react"
 import { useState } from "react"
-import BentoGrid from "@/components/ardacity/bento-grid"
+import Toolbar from "@/components/ardacity/toolbar"
+
+
+
 
 const installCommands = {
-  bun: "bunx shadcn@latest add https://ardacityui.ar.io/r/bento-grid.json",
-  npm: "npx shadcn@latest add https://ardacityui.ar.io/r/bento-grid.json",
-  pnpm: "pnpm dlx shadcn@latest add https://ardacityui.ar.io/r/bento-grid.json",
+  bun: "bunx shadcn@latest add https://ardacityui.ar.io/r/toolbar.json",
+  npm: "npx shadcn@latest add https://ardacityui.ar.io/r/toolbar.json",
+  pnpm: "pnpm dlx shadcn@latest add https://ardacityui.ar.io/r/toolbar.json",
 }
 
-const codeExample = `import BentoGrid from "@/components/ardacity/bento-grid";
+const codeExample = `import BentoGrid from "@/components/ardacity/toolbar";
 
 export default function Page() {
   return <BentoGrid />;
 }`
 
-export default function BentoGridPage() {
+export default function ToolbarPage() {
   const [activeTab, setActiveTab] = useState("preview")
   const [copiedCommand, setCopiedCommand] = useState<string | null>(null)
 
@@ -34,7 +37,7 @@ export default function BentoGridPage() {
     <div className="container mx-auto px-6 py-8 max-w-6xl">
       <div className="mb-8">
         <div className="flex items-center gap-2 mb-4">
-          <h1 className="text-4xl font-bold">Bento Grid</h1>
+          <h1 className="text-4xl font-bold">Toolbar</h1>
           <Badge variant="secondary">Layout</Badge>
         </div>
         <p className="text-lg text-muted-foreground">
@@ -48,7 +51,7 @@ export default function BentoGridPage() {
           <div className="flex items-center justify-between">
             <div>
               <CardTitle>Component Preview</CardTitle>
-              <CardDescription>Interactive preview of the Bento Grid component</CardDescription>
+              <CardDescription>Interactive preview of the Toolbar component</CardDescription>
             </div>
             <Tabs value={activeTab} onValueChange={setActiveTab}>
               <TabsList>
@@ -66,9 +69,9 @@ export default function BentoGridPage() {
         </CardHeader>
         <CardContent>
           <Tabs value={activeTab} onValueChange={setActiveTab}>
-            <TabsContent value="preview" className="mt-0">
-              <div className="min-h-[400px] bg-muted/20 rounded-lg p-4">
-                <BentoGrid />
+            <TabsContent value="preview" className="mt-0 flex justify-center">
+              <div className=" bg-muted/20 rounded-lg p-4">
+                <Toolbar />
               </div>
             </TabsContent>
             <TabsContent value="code" className="mt-0">
@@ -97,7 +100,7 @@ export default function BentoGridPage() {
       <Card className="mb-8">
         <CardHeader>
           <CardTitle>Installation</CardTitle>
-          <CardDescription>Install the Bento Grid component using the shadcn/ui CLI</CardDescription>
+          <CardDescription>Install the Toolbar component using the shadcn/ui CLI</CardDescription>
         </CardHeader>
         <CardContent>
           <Tabs defaultValue="bun" className="w-full">

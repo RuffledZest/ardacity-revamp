@@ -17,7 +17,7 @@ export default function AiChatPage() {
     setTimeout(() => setCopied(false), 2000)
   }
 
-  const installCommand = "npx shadcn@latest add https://ardacity.dev/r/ai-chat.json"
+  const installCommand = "npx shadcn@latest add https://ardacityui.ar.io/r/ai-chat.json"
 
   return (
     <div className="flex">
@@ -40,7 +40,7 @@ export default function AiChatPage() {
           <h2 id="preview" className="text-2xl font-semibold mb-4">
             Preview
           </h2>
-          <div className="h-96 bg-muted/20 rounded-lg overflow-hidden">
+          <div className=" bg-muted/20 rounded-lg overflow-hidden">
             <AiChat />
           </div>
         </section>
